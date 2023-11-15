@@ -132,3 +132,29 @@ body.dark-mode .word-example {
     border-left-color: #2d2d2d; /* Dark mode border color */
     color: #ae9cff; /* Dark mode text color */
 }
+
+
+/* Your existing styles */
+
+/* Dark mode toggle button */
+#toggle-dark-mode {
+    background-color: #ae9cff;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 20px;
+}
+
+#toggle-dark-mode:hover {
+    background-color: #1f194c; /* Dark mode button hover color */
+}
+
+.error{
+    margin-top: 80px;
+    text-align: center;
+}
+  
