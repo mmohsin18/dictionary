@@ -27,9 +27,34 @@ btn.addEventListener("click", () => {
             ${data[0].meanings[0].definitions[0].example || ""}
         </p>`;
         sound.setAttribute("src", `${data[0].phonetics[0].audio}`);
-        console.log(sound);
-    });     
+    })
+    .catch( () => {
+        result.innerHTML = `<h3 class="error">Couldn't find the word</h3>`
+    })
 });
+
+
+
+// Check for saved dark mode preference in localStorage
+const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+
+// Apply dark mode if it's enabled
+if (isDarkMode) {
+    document.body.classList.add('dark-mode');
+}
+
+// Toggle dark mode on button click
+document.getElementById('toggle-dark-mode').addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+
+    // Save dark mode preference to localStorage
+    if (document.body.classList.contains('dark-mode')) {
+        localStorage.setItem('darkMode', 'enabled');
+    } else {
+        localStorage.setItem('darkMode', 'disabled');
+    }
+});
+
 
 function playSound() {
     sound.play();
