@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    background-color: #ae9cff; /* Default background color */
+    height: 100%;
+    width: 100%;
+    color: #1f194c; /* Default text color */
+}
+
+body.dark-mode {
+    background-color: #1f194c; /* Dark mode background color */
+    color: #ae9cff; /* Dark mode text color */
+}
+
+.container {
+    background-color: #fff;
+    width: 90vmin;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 80px 50px;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(38, 33, 61, 0.2);
+}
+
+body.dark-mode .container {
+    background-color: #2d2d2d; /* Dark mode container background color */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* Dark mode box shadow */
+}
+
+.search-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-box input {
+    padding: 5px;
+    width: 70%;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #ae9cff;
+    font-size: 16px;
+    color: #1f194c; /* Default text color */
+    background-color: transparent;
+}
+
+body.dark-mode .search-box input {
+    border-bottom-color: #ae9cff; /* Dark mode input border color */
+    color: #ae9cff; /* Dark mode text color */
+}
+
+.search-box button {
+    padding: 10px 0;
+    width: 25%;
+    background-color: #ae9cff;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+body.dark-mode .search-box button {
+    background-color: #2d2d2d; /* Dark mode button background color */
+    color: #ae9cff; /* Dark mode text color */
+}
+
+.result {
+    position: relative;
+}
+
+.result h3 {
+    font-size: 30px;
+    color: #1f194c;
+}
+
+body.dark-mode .result h3 {
+    color: #ae9cff; /* Dark mode text color */
+}
+
+.result .word {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.result button {
+    background-color: transparent;
+    border: none;
+    color: #ae9cff;
+    outline: none;
+    font-size: 18px;
+}
+
+body.dark-mode .result button {
+    color: #1f194c; /* Dark mode text color */
+}
+
+.result .details {
+    display: flex;
+    gap: 10px;
+    color: #b3b6d4;
+    margin: 5px 0 20px 0;
+    font-size: 14px;
+}
+
+body.dark-mode .result .details {
+    color: #575a7b; /* Dark mode text color */
+}
+
+.word-meaning {
+    color: #575a7b;
+}
+
+.word-example {
+    color: #575a7b;
+    font-style: italic;
+    border-left: 5px solid #ae9cff;
+    padding-left: 20px;
+    margin-top: 30px;
+}
+
+body.dark-mode .word-example {
+    border-left-color: #2d2d2d; /* Dark mode border color */
+    color: #ae9cff; /* Dark mode text color */
+}
